@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StarWarsExplorer
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+StarWarsExplorer is a React-based web application that allows users to explore data from the Star Wars universe. It features search functionality for characters, planets, and starships, and allows users to view detailed information about each entity. Users can also save their favorite entities for later reference.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application uses Redux for state management and Tailwind CSS for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Approach
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project was developed with the following steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Setting Up the Project**:  
+   - I initialized the project using Create React App with TypeScript template for type safety.
+   - Installed necessary dependencies, including Redux, React-Redux, and Redux Toolkit for state management.
+   - Added Tailwind CSS for styling.
 
-## Learn More
+2. **State Management**:  
+   - Used Redux to manage the state, including:
+     - Search query and entity type (`people`, `planets`, `starships`).
+     - Search results and loading state.
+     - Caching the details of each entity for efficiency.
+     - Storing user favorites in localStorage.
+   
+3. **Search and Data Fetching**:  
+   - Integrated an external API (`https://swapi.dev/api/`) to fetch data based on the selected entity type and search query.
+   - The results are displayed dynamically, and users can interact with each entity to see more details.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Favorites Functionality**:  
+   - The app allows users to add and remove entities from their favorites list. The favorites are stored in the localStorage and persisted between sessions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **UI Components**:  
+   - Created reusable components such as `SearchBar`, `SearchResults`, and `EntityDetails` for clean code structure.
+   - Implemented responsive design with Tailwind CSS to ensure good user experience across devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. **Error Handling**:  
+   - Handled API errors gracefully and displayed relevant error messages if the fetch operation fails.
 
-## Deploy on Vercel
+7. **Infinite Scroll**:  
+   - Implemented infinite scroll to load more results as the user scrolls down, reducing the need for page reloads.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instructions for Running the Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the Repository**:  
+   First, clone the repository to your local machine using Git:
+
+   ```bash
+   git clone https://github.com/annanoukou/StarWarsExplorer.git
