@@ -64,7 +64,7 @@ The project was developed with the following steps:
    
    This will start the application and open it in your default browser at http://localhost:3000.
 
-   ## Challenges Faced
+## Challenges Faced
 
 ### State Management with Redux:
 One challenge I faced was properly managing the state with Redux, especially handling the entity details and caching them for performance. To solve this, I implemented Redux Toolkit to simplify the process and used `localStorage` to persist user favorites.
