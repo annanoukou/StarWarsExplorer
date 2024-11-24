@@ -36,9 +36,6 @@ The project was developed with the following steps:
 6. **Error Handling**:  
    - Handled API errors gracefully and displayed relevant error messages if the fetch operation fails.
 
-7. **Infinite Scroll**:  
-   - Implemented infinite scroll to load more results as the user scrolls down, reducing the need for page reloads.
-
 ## Instructions for Running the Project
 
 1. **Clone the Repository**:  
