@@ -55,7 +55,7 @@ The project was developed with the following steps:
    npm install
    ```
 
-   3. **Start the Development Server**:
+3. **Start the Development Server**:
    To run the project locally in development mode, use the following command:
 
    ```javascript
